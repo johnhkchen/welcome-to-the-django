@@ -16,7 +16,7 @@ code:
     code README.md justfile
 
 dev:
-    python3 manage.py runserver
+    python manage.py migrate && python manage.py collectstatic --noinput && gunicorn mysite.wsgi
 
 lint:
     ruff check .
