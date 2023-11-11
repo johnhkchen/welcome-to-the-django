@@ -1,0 +1,14 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:3",
+
+	"features": {
+		// "ghcr.io/devcontainers/features/github-cli:1": {},
+		// "ghcr.io/rio/features/chezmoi:1": {},
+		"ghcr.io/guiyomh/features/just:0": {}
+	},
+	// "forwardPorts": [],
+	"postCreateCommand": "pip3 install --user -r .devcontainer/requirements-dev.txt"
+	// "customizations": {},
+	// "remoteUser": "root"
+}
