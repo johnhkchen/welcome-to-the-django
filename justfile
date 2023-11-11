@@ -16,13 +16,11 @@ code:
     code README.md justfile
 
 dev:
-    python3 src/manage.py runserver
+    python3 manage.py runserver
 
 lint:
     ruff check .
 
 superlint:
-    pylint src
-    pylint --disable=E0401 tests
-    flake8 src
-    flake8 tests
+    pylint .
+    flake8 .
